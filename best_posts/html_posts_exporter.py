@@ -6,14 +6,14 @@ class HtmlPostsExporter:
     def export(self):
         head = '<!DOCTYPE HTML>\n<meta charset="utf-8"/>\n<html>\n<head><title>Сылки на посты</title><head/>\n<body>\n'
         string_end = '</body>\n</html>'
-        html_string = head + self.all_posts_link_maker() + string_end
+        html_string = head + self.all_posts_link_maker(self.posts) + string_end
 
         return html_string
 
-    def all_posts_link_maker(self):
+    def all_posts_link_maker(self, posts):
         all_links = ''
-        for i in range(0, len(self.posts)):
-           all_links = all_links + self.one_post_link_maker(self.posts[i])
+        for i in range(0, len(posts)):
+           all_links = all_links + self.one_post_link_maker(posts[i])
 
         return all_links
 

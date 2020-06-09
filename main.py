@@ -10,9 +10,9 @@ api_group = '-1'
 
 
 wall_id = ёжики
-print('Введите количество постов')
 posts_fetch_count = 100
 top_posts_count = 5
+print('Выбор лучших', top_posts_count, 'постов из последних', posts_fetch_count)
 
 posts = LastPostsFetcher(wall_id, posts_fetch_count).fetch()
 top_posts = TopPostsSelector(posts, top_posts_count).select_top_posts()

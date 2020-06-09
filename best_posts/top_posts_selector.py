@@ -11,9 +11,5 @@ class TopPostsSelector:
     def extract_likes(self, some_post):
         likes = some_post['likes']
         count = likes['count']
-        print(count)
-        return count
 
-#likes =
-#TopPostsSelector.extract_likes(some_post)
-#print(int(likes))
+        return count
