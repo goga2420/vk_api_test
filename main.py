@@ -1,6 +1,7 @@
 from best_posts.last_posts_fetcher import LastPostsFetcher
 from best_posts.top_posts_selector import TopPostsSelector
 from best_posts.html_posts_exporter import HtmlPostsExporter
+from user_groups_get import UserGroupsGet
 
 
 dank_memes = '-120254617'
@@ -22,4 +23,8 @@ HtmlPostsExporter(wall_id, top_posts).export()
 file = open('posts.html', 'w')
 file.write(HtmlPostsExporter(wall_id, top_posts).export())
 file.close()
+
+user_id = 184311128
+user_groups = UserGroupsGet(user_id, offset=2, count=3, extended=1).get_users_group()
+
 print()
