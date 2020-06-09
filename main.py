@@ -5,9 +5,11 @@ from best_posts.html_posts_exporter import HtmlPostsExporter
 
 dank_memes = '-120254617'
 reddit = '-150550417'
+api_group = '-1'
+ёжики = '-148428969'
 
 
-wall_id = reddit
+wall_id = ёжики
 print('Введите количество постов')
 posts_fetch_count = 100
 top_posts_count = 5
