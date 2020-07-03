@@ -1,4 +1,4 @@
-from best_posts.wall_get import WallGet
+from vk_api.wall_get import WallGet
 
 class LastPostsFetcher:
     def __init__(self, owner_id, posts_number):

@@ -1,7 +1,7 @@
-from best_posts.groups_get_by_id import GroupsGetById
-from best_posts.top_posts_selector import TopPostsSelector
-from best_posts.last_posts_fetcher import LastPostsFetcher
-from best_posts.html_group_posts_element_former import HtmlGroupPostsElementFormer
+from vk_api.groups_get_by_id import GroupsGetById
+from service.top_posts_selector import TopPostsSelector
+from service.last_posts_fetcher import LastPostsFetcher
+from service.html_group_posts_element_former import HtmlGroupPostsElementFormer
 
 
 class GroupsBestPostsSummary:

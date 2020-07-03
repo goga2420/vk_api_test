@@ -1,4 +1,4 @@
-from best_posts.token_provider import TokenProvider
+from vk_api.token_provider import TokenProvider
 import requests
 
 class WallGet:
