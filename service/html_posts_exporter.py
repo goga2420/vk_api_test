@@ -1,3 +1,6 @@
+# Класс HtmlPostsExporter формирует ссылки на посты, после чего скрепляет их с html строчками так, чтобы получилась готовая html страницы
+
+
 class HtmlPostsExporter:
     def __init__(self, wall_id, posts):
         self.wall_id = wall_id
@@ -21,6 +24,6 @@ class HtmlPostsExporter:
         vk_url = 'https://vk.com/wall'
         href = '\t<a href="' \
                + vk_url + str(self.wall_id) + '_' + str(post['id']) + '">' \
-               + str(post['likes']['count']) + '❤ ' + post['text'][:50] + '</a><br/>\n'
+               + str(post['likes']['count']) + '❤, ' + post['comments']['count'] + 'comments, ' + post['text'][:50] + '</a><br/>\n'
 
         return href

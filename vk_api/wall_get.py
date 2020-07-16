@@ -1,6 +1,9 @@
 from vk_api.token_provider import TokenProvider
 import requests
 
+# В классе WallGet мы создаем ссылку, необходимую для получения постов из группы во вконтакте и
+# последующего преобразования данных о посте в нужный формат
+
 class WallGet:
     def __init__(self, owner_id, offset, count):
         self.owner_id = owner_id

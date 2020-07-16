@@ -1,4 +1,7 @@
-from best_posts.groups_best_posts_summary import GroupsBestPostsSummary
+from service.groups_best_posts_summary import GroupsBestPostsSummary
+
+
+# Главный файл в котором находится информация о названиях и требуемых аргументах и в котором запускается весь код
 
 
 dank_memes = '120254617'

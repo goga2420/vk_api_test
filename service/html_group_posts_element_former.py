@@ -1,4 +1,8 @@
 class HtmlGroupPostsElementFormer:
+    """Класс HtmlGroupPostsElementFormer формирует ссылки на посты, но потом скрепляет
+    лишь с частью  html строк чтобы эта часть кода могла повторяться
+    from vk_api.groups_friend_members_get import GroupFriendsMembersGet"""
+
     def __init__(self, group, posts):
         self.group = group
         self.posts = posts
@@ -23,7 +27,11 @@ class HtmlGroupPostsElementFormer:
         vk_url = 'https://vk.com/wall'
         href = '\t<a href="' \
                + vk_url + '-' + str(self.group['id']) + '_' + str(post['id']) + '">' \
-               + str(post['likes']['count']) + '❤ ' + post['text'][:50] + '</a><br/>\n'
+               + str(post['likes']['count']) + '❤, ' + \
+               str(post['comments']['count']) + ' comments, ' \
+               + str(post['reposts']['count']) + ' reposts, '\
+               + post['text'][:50] + '</a><br/>\n'
+
 
         return href
 

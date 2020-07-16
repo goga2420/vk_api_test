@@ -1,6 +1,8 @@
 from vk_api.token_provider import TokenProvider
 import requests
 
+# В классе GroupsGetById мы создаем ссылку, по которой мы получаем информацию о группах и преобразуем ее в формат json
+
 class GroupsGetById:
     def __init__(self, group_ids):
         self.group_ids = group_ids

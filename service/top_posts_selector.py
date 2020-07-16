@@ -1,3 +1,6 @@
+# Класс TopPostsSelector, получая информацию о постах, сортирует их по количеству лайков
+
+
 class TopPostsSelector:
     def __init__(self, posts, top_posts_count):
         self.posts = posts

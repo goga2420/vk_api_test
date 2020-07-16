@@ -1,5 +1,8 @@
 from vk_api.wall_get import WallGet
 
+# Класс LastPostsFetcher получает введенное количество постов
+
+
 class LastPostsFetcher:
     def __init__(self, owner_id, posts_number):
         self.owner_id = owner_id
